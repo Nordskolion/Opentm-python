@@ -58,4 +58,5 @@ class DummyPyService(object):
 
 if __name__ == "__main__":
     config = {'port': 8088, 'host': '127.0.0.1', 'path': '/', 'strict': True}
-    service = DummyPyService(config=config)
+    hub_url = 'http://localhost:8080'
+    service = DummyPyService(config=config, hub_url=hub_url)
